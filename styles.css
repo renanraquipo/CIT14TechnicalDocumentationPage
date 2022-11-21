@@ -1,0 +1,339 @@
+:root {
+  --black: #13240f;
+  --pink: #be2590;
+  --background: linear-gradient(to right, #cccccc, #99cccc, #ccffcc);
+  --navbar: rgba(0, 22, 22, 0.4);
+  --comment: #3333ff;
+
+  background-image: var(--background);
+  font-size: 17px;
+}
+#navbar {
+  background-color: var(--navbar);
+  grid-area: navbar;
+  position: fixed;
+  width: 200px;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  font-size: 21px;
+}
+#navbar header {
+  padding-top: 15px;
+  font-weight: 800;
+  color: var(--black);
+}
+#navbar ul {
+  overflow-y: auto;
+  height: 90%;
+  padding: 0;
+}
+#navbar li {
+  color: #cccccc;
+  border-top: 2px solid;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px;
+  color: var(--black);
+}
+/** Fim navbar **/
+
+.content {
+  grid-area: content;
+}
+
+#main-doc {
+  margin-top: 30px;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px auto;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  #main-doc {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 2fr 0.3fr;
+    
+  }
+
+  #navbar {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+  }
+  #navbar ul {
+    height: 70%;
+  }
+}
+
+.main-section {
+  padding: 20px;
+}
+
+.main-section header {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+#navbar a:hover,
+a:hover {
+  color: var(--pink);
+}
+
+li {
+  list-style: none;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #dddd;
+  padding: 10px 30px 10px 30px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.comment {
+  color: var(--comment);
+}
+
+h3,
+header {
+  color: var(--black);
+}
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  grid-area: footer;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--pink);
+}
+
+footer .icon {
+  margin: 0.3em;
+  font-size: 2em;
+}
+
+footer img {
+  max-width: 30%;
+}
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+	<title>Vaping</title>
+</head>
+<body>
+<nav id="navbar">
+  <header>Vaping</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#How_Does_Vaping_Work?"
+        >How Does Vaping Work?</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#Vaping_Health_and_Safety_Risks">Vaping Health and Safety Risks</a>
+    </li>
+    <li><a class="nav-link" href="#Effects">Effects</a></li>
+    <li><a class="nav-link" href="#Who_is_Vaping?">Who is Vaping?</a></li>
+    <li>
+      <a class="nav-link" href="#ELECTRONIC_CIGARETTES_–_A_BASIC_INTRODUCTION">ELECTRONIC CIGARETTES – A BASIC INTRODUCTION</a>
+    </li>
+    <li><a class="nav-link" href="#So_what’s_in_this_“e-liquid”?">So what’s in this “e-liquid”?</a></li>
+    <li><a class="nav-link" href="#Nicotine">Nicotine</a></li>
+    <li><a class="nav-link" href="#Propylene_Glycol">Propylene Glycol</a></li>
+    <li><a class="nav-link" href="#Vegetable_Glycerin">Vegetable Glycerin</a></li>
+    <li>
+      <a class="nav-link" href="#Flavoring">Flavoring</a>
+    </li>
+    <li><a class="nav-link" href="#So_what’s_the_deal_with_mods">So what’s the deal with mods</a></li>
+   
+    <li><a class="nav-link" href="#Is_that_really_all_there_is_to_it?">Is that really all there is to it?</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        A "vape," or electronic cigarette, is a device that heats up a liquid to create a vapor you inhale. Some types of vaping devices include pens, e-cigarettes (like JUUL), and hookahs. While vaping appears to be a healthieralternative to smoking cigarettes, there are still many health risks involved. Here’s everything you need to know.
+      </p>
+
+      <ul>
+        
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="How_Does_Vaping_Work?">
+    <header>How Does Vaping Work?</header>
+    <article>
+      <p>Vaping devices can vary in shape, size and color. Devices produce an aerosol byproduct from heating up a liquid that sometimes consists of flavorings and other chemicals that make vaping seem less harsh (initially at least) than smoking. This liquid delivers nicotine, marijuana, or other drugs to the user via a mouthpiece that is inhaled into the lungs then expelled via the mouth or nose.
+
+</p>
+
+      <ul>
+        
+       
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Vaping_Health_and_Safety_Risks">
+    <header>Vaping Health and Safety Risks</header>
+    <article>
+      <p>
+       While many of these products typically feature a liquid containing one-third-to-half the nicotine found in a cigarette—for example, one 5% strength JUULpod is designed to replace an entire pack of cigarettes in nicotine strength—vaping users still face many health and safety risks.
+
+Nicotine, a stimulant which can harm the developing adolescent brain (which continues to grow until approximately 25 years of age), is found in many e-cigarettes, though not always listed on the label, according to a recent CDC study.
+
+The use of nicotine in developing adolescent brains can harm parts that control:
+      </p>
+<li>Learning</li>
+<li>Mood</li>
+<li>Attention</li>
+<li>Impulse control</li>
+      
+    </article>
+  </section>
+  <section class="main-section" id="Effects">
+    <header>Effects</header>
+    <article>
+     Nicotine use affects how the synapses—connections between brain cells—are formed. Regular usage in adolescence can also increase the risk for future addiction to cigarettes and other drugs.
+
+Other than nicotine, vaping liquid and subsequent vapor may include other harmful substances including:
+      <code
+        >- Cancer-causing chemicals
+- Heavy metals such as nickel, tin and lead
+- Flavorings such as diacetyl, a chemical linked to lung disease
+- Volatile organic compounds
+- Ultra-fine particles that can be inhaled deep into the lungs
+      </code></article>
+<article>
+  Scientists are still actively learning about the effects of vaping, especially surrounding Vitamin E acetate, a chemical added to some vaping liquids to help dilute. There were morethan2,500 cases of users being hospitalized for vaping-related injury as of December 17, 2019. Vaping has also led to 54 deaths across 27 states and the District of Columbia.
+      
+    </article>
+  </section>
+  <section class="main-section" id="Who_is_Vaping?">
+    <header>Who is Vaping?</header>
+    <p>
+      According to 2018 National Youth Tobacco Survey (NYTS) data, 3.6 million children in middle school and high school use e-cigarettes. Use, defined by at least once per day over the past 30 days, has increased 78 percent from 11.7 to 20.8 percent in 2018.
+    </p>
+    <p>
+      The rise of e-cigarette use among middle school and high school students has resulted in an increase in overall tobacco use by 38 percent in high school students and 29 percent among middle schoolers.
+    </p>
+    <p>
+      E-cigarette use isn't limited to adolescents: nine percent of U.S. adults say they "regularly or occasionally" vape.
+    </p>
+  </section>
+  <section class="main-section" id="ELECTRONIC_CIGARETTES_–_A_BASIC_INTRODUCTION">
+    <header>ELECTRONIC CIGARETTES –
+A BASIC INTRODUCTION</header>
+    <article>
+      Ever wondered what this is all about? What is a mod? What’s in e-liquid? How is it safer? How has vaping helped so many people quit smoking? The following article will answer these questions.
+      <p>
+       <code> Electronic cigarettes came to be as a safer alternative to smoking, and as a smoking cessation aid. E-cigarettes and traditional tobacco cigarettes vary in many ways. The first, and most important difference between the two is that e-cigarettes don’t contain the 4,000+ carcinogenic bi-products that cigarettes do. This provides a safer way of ingesting nicotine while still maintaining the same physical act of inhalation as smoking. That is one reason e-cigarettes have helped so many people (millions) quit smoking successfully. The term for it is “oral fixation” and it refers to the portion of the smoking addiction which is actually more associated with the act of smoking rather than the nicotine itself. This is why so many smokers attempt to quit by chewing gum (with or without nicotine added) and why quitting smokers have been known to snack more than they did as smokers (also because nicotine is a natural hunger inhibitor). The act of using an e-cigarette is widely labeled as vaping.</code>
+      </p>
+      <p>
+        The basic function of an e-cigarette is rather simple. A power source (usually a lithium-ion battery) applies power to an atomizer, which heats up and vaporizes the e-liquid (also known as e-juice or juice). <code>Types of atomizers vary greatly, as the industry has advanced by leaps and bounds since its inception. There are simple disposable atomizers, atomizers with replaceable heating elements, and on the higher level, rebuildable atomizers, where the user actually creates their own heating element and wicking material assembly themselves.</code>
+      </p>
+      <p>
+      Most e-cigarette users use some form of a tank, which the atomizer itself is mounted inside. This provides a convenient vape, because the liquid can feed from the tank directly into the atomizer, allowing the user to vape for up to days at a time (depending on usage level) without having to fiddle with their device. <code>There are many forms of tanks on the market, with varying features and applications. Tanks are the industry standard for the average user in today’s market.</code>
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="So_what’s_in_this_“e-liquid”?">
+    <header>So what’s in this “e-liquid”?</header>
+    <article>
+      <p>
+       This question has stirred up a lot of controversy over the past few years. Between anti-nicotine and tobacco campaigns (which typically lump vaping in with smoking), financial quarries (on tobacco companies’ behalf) due to the current unregulated status of the vaping industry, and a plethora of both factual and bogus studies, there is a LOT of confusion about what is really going on inside of a bottle of e-liquid. It’s really rather simple. At its core, e-liquid has 4 main components:
+      </p>
+
+  </section>
+  <section class="main-section" id="Nicotine">
+    <header>Nicotine</header>
+    <article>
+      <p>
+        Nicotine is an optional ingredient in e-liquid. Many users slowly reduce the amount of nicotine in their liquid blend in order to “ween” themselves off of the habit, and many have had great success doing so. The nicotine used in our liquid is pharmaceutical grade and 99.86% – 99.93% pure.
+      </p>
+
+    </article>
+  </section>
+  <section class="main-section" id="Propylene_Glycol">
+    <header>Propylene Glycol</header>
+    <article>
+      <p>
+       PG is used as a flavor carrier in many food products. It is also used in food coloring and as an additive in some medicines. It can be found inside your average asthma patient’s inhaler. This is a thin liquid. PG is deemed by the FDA as safe for human consumption* and is non-toxic. The PG used in our liquids is USP grade. PG has a harsher hit than VG and carries flavor better.
+      </p>
+
+  </section>
+  <section class="main-section" id="Vegetable_Glycerin">
+    <header>Vegetable Glycerin </header>
+    <article>
+      VG is a sweet, thick, vegetable based liquid. It has many commercial uses, and can be found and purchased over the counter easily at any normal grocery store. VG is deemed by the FDA as safe for human consumption* and is non-toxic. The VG used in our liquids is USP grade. VG is a smoother liquid than PG and provides more vapor production.
+     
+    </article>
+  </section>
+  <section class="main-section" id="Flavoring">
+    <header>Flavoring</header>
+    <article>
+      The e-liquid market uses flavorings primarily from the food industry. That means that these flavorings have been deemed by the FDA as safe for human consumption* as well. There are a wide variety of flavors available for use in e-cigarettes. Anything from tobacco, to coffee, to sherbet!
+
+      <code>All of these components combine to form your average e-liquid. There have been many tests over the years, and the general result is that vaping is a much healthier alternative to traditional tobacco cigarettes. When used properly, e-cigarettes and e-liquid have the potential to save millions of lives around the world. Unfortunately, some manufacturers may not live up to the general standards presented by most, but any reputable e-liquid manufacturer has high quality and purity standards for not only their ingredients, but their mixing processes. All of our e-liquids are hand crafted in an ISO 6 Class 1000 certified cleanroom by an experienced staff dedicated to quality and accuracy.
+      <p>
+        *It should be noted that although the ingredients of our e-liquid are FDA approved for human consumption, that does not mean that they are approved for inhalation. The FDA has not yet made moves towards this issue.
+      </p>
+     </code>
+     
+         </article>
+  </section>
+  <section class="main-section" id="So_what’s_the_deal_with_mods">
+    <header>So what’s the deal with mods</header>
+    <article>
+     The vaping revlolution has changed lives for many. For most, vaping is an escape from the hazardous and unappealing habit of smoking, but for some, it has become a hobby. Vaping hobby-ism came about shortly after the first big jump in vaping technology, which was about a year after it gained mainstream popularity. A wide array of high end devices (mods) and customizable features have brought a whole new underground fan base to the vaping world. These devices allow the user to actually build their own coils (heating elements) and use any wicking material they want. The most commonly used wicking material is organic cotton. They then place these higher end rebuildable atomizers on high powered devices which provide huge amounts of vapor. This allows you to lower your nicotine level due to the higher intake volume of vapor, so your vape is much more flavorful. This ability to fully customize the vaping experience has led to a massive following of vaping enthusiasts.
+
+    </article>
+  </section>
+  <section class="main-section" id="Is_that_really_all_there_is_to_it?">
+    <header>Is that really all there is to it?</header>
+    <article>
+      <ul>
+        <li>
+         This article serves as a general outline to the many facets of the vaping industry. There is much more information on the topics associated with vaping. If you have any further questions, please send us a message via our Facebook page or e-mail us at 
+          <a
+            href="comments@joostmail.co"
+            target="_blank"
+            >comments@joostmail.co</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+</body>
+</html>
